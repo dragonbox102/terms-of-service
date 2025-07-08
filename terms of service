@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Terms of Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bot Terms of Service</h1>
+
+        <p>By using the Bot, you agree to comply with the following conditions:</p>
+
+        <ul>
+            <li>You will not abuse, spam, or exploit the functionality of the Service in any manner.</li>
+            <li>You will only operate the Bot within Discord servers where you have the necessary permissions to do so.</li>
+            <li>You will not attempt to modify, decompile, disassemble, or reverse-engineer the Bot or any of its components.</li>
+            <li>You will not use the Bot for any form of commercial resale, monetization, or financial gain without obtaining prior written authorization from the developer.</li>
+        </ul>
+
+        <h2>Data Collection and Privacy</h2>
+        <p>The Bot may collect and temporarily store basic, non-personal server-related metadata, including:</p>
+        <ul>
+            <li>Server ID</li>
+            <li>Channel ID</li>
+            <li>Timestamps of stock changes</li>
+        </ul>
+        <p>The Bot does not collect or store any personally identifiable information (PII). If you have concerns or inquiries regarding data usage, you may contact the Bot developer for further clarification.</p>
+
+        <h2>Service Availability</h2>
+        <p>This Bot is provided on an "as-is" and "as-available" basis. While the developer aims to maintain operational stability, there are no guarantees of uptime, availability, or uninterrupted service. The Bot may be modified, temporarily disabled, or permanently discontinued at any time without prior notice.</p>
+
+        <h2>Limitations of Liability</h2>
+        <p>The Bot developer shall not be held liable for any:</p>
+        <ul>
+            <li>Errors, inaccuracies, or delays in game-related stock data.</li>
+            <li>Missed notifications, alerts, or stock change messages.</li>
+            <li>Direct or indirect damages resulting from the use, misuse, or inability to use the Bot.</li>
+        </ul>
+        <p>Use of the Bot is at your own discretion and risk.</p>
+
+        <h2>Termination of Service</h2>
+        <p>We reserve the right to restrict, suspend, or revoke access to the Bot for any user or Discord server found to be in violation of these Terms or Discord’s Community Guidelines, at any time and without notice.</p>
+
+        <h2>Modifications to the Terms</h2>
+        <p>These Terms of Service are subject to change at any time. Continued use of the Bot following any modifications will constitute your acceptance of the updated Terms.</p>
+
+        <h2>Disclaimer</h2>
+        <p>The Bot is provided free of charge and is intended for non-commercial use across eligible Discord servers. Please ensure you have read and understood the usage guidelines outlined above before deploying the Bot in your community.</p>
+    </div>
+</body>
+</html>
