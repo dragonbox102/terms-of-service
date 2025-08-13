@@ -6,7 +6,7 @@
     <title>Bot Terms of Service - Grow a Garden Stocks</title>
     <style>
         body {
-            font-family: 'Consolas', 'Monaco', monospace; 
+            font-family: 'Consolas', 'Monaco', monospace;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
@@ -79,23 +79,23 @@
         <h1>Bot Terms of Service: Protocol & Data Integrity for Grow a Garden Stocks</h1>
         <div class="last-updated">Last Updated: August 13, 2025</div>
 
-        <p>Welcome, fellow digital voyager, to the operational parameters governing your interaction with <strong>Grow a Garden Stocks</strong> (herein referred to as "the Bot" or "the Service"). By initiating or continuing the utilization of the Bot's functionalities within any Discord guild (server), you formally acknowledge and unconditionally consent to adhere to the entirety of the following stipulations. Failure to concur with any segment of these terms mandates immediate cessation of Bot usage.</p>
+        <p>Welcome, fellow digital voyager, to the operational parameters governing your interaction with <strong>Grow a Garden Stocks</strong> (herein referred to as "the Bot" or "the Service"). By initiating or continuing the utilization of the Bot's functionalities within any Discord guild (server), you formally acknowledge and unconditionally consent to adhere to the entirety of the following stipulations. Failure to concur with any segment of these terms mandates immediate cessation of Bot usage. This document outlines your rights and responsibilities, as well as the operational principles that govern the bot's behavior and your data.</p>
 
-        ---
+        <hr>
 
         <h2>1. Permitted & Prohibited Operational Modalities</h2>
         <p>To ensure optimal system performance and a harmonious ecosystem within your "Grow a Garden" ventures, your engagement with the Bot is bound by the following protocols:</p>
         <ul>
-            <li><strong>Fair Use Doctrine:</strong> You shall refrain from engaging in any form of abuse, unsolicited message proliferation (spamming), or exploitation of any known or yet-to-be-discovered vulnerabilities within the Service's architecture. This includes, but is not limited to, actions designed to degrade performance, consume excessive resources, or bypass intended rate limits of <strong>Grow a Garden Stocks</strong>.</li>
-            <li><strong>Authorized Deployment:</strong> The Bot's deployment and subsequent operation are strictly limited to Discord guilds where you possess the requisite administrative privileges, explicitly granted by the guild owner or an authorized administrator. Unauthorized deployment or manipulation of <strong>Grow a Garden Stocks</strong> is expressly forbidden.</li>
-            <li><strong>Code Integrity:</strong> Any attempt to decompile, disassemble, reverse-engineer, modify, derive source code from, or otherwise tamper with the Bot's compiled binaries, algorithms, or any underlying components of <strong>Grow a Garden Stocks</strong> is unequivocally prohibited. The intellectual property of the Bot remains with its developer.</li>
+            <li><strong>Fair Use Doctrine:</strong> You shall refrain from engaging in any form of abuse, unsolicited message proliferation (spamming), or exploitation of any known or yet-to-be-discovered vulnerabilities within the Service's architecture. This includes, but is not limited to, actions designed to degrade performance, consume excessive resources, or bypass intended rate limits of <strong>Grow a Garden Stocks</strong>. This clause is in place to protect the stability of the bot for all users and to prevent intentional disruptions.</li>
+            <li><strong>Authorized Deployment:</strong> The Bot's deployment and subsequent operation are strictly limited to Discord guilds where you possess the requisite administrative privileges, explicitly granted by the guild owner or an authorized administrator. Unauthorized deployment or manipulation of <strong>Grow a Garden Stocks</strong> is expressly forbidden. This ensures that the bot is only added to servers with the proper consent and management oversight.</li>
+            <li><strong>Code Integrity:</strong> Any attempt to decompile, disassemble, reverse-engineer, modify, derive source code from, or otherwise tamper with the Bot's compiled binaries, algorithms, or any underlying components of <strong>Grow a Garden Stocks</strong> is unequivocally prohibited. The intellectual property of the Bot remains with its developer. This is a standard measure to protect the bot's source code and the developer's creative work.</li>
             <li><strong>Non-Commercial Stipulation:</strong> The Bot is engineered and provided solely for non-commercial, recreational, and informational purposes. Any form of commercial resale, monetization, financial exploitation, or direct/indirect profit generation through the services provided by <strong>Grow a Garden Stocks</strong> is strictly forbidden without explicit, prior written authorization from the Bot's developer. This includes, but is not limited to, integrating the Bot into paid services or using its output for commercial ventures.</li>
         </ul>
 
-        ---
+        <hr>
 
         <h2>2. Data Collection, Storage, and Privacy Protocol for Grow a Garden Stocks</h2>
-        <p>The operational efficiency of <strong>Grow a Garden Stocks</strong> necessitates the storage of specific configuration and runtime data. We are committed to a philosophy of <strong>minimal data collection</strong>, focusing exclusively on data essential for its functionality within Discord servers, <strong>without infringing upon personal privacy.</strong> Data is now stored securely in private databases managed by the Bot, and no confidential or personal information is stored.</p>
+        <p>The operational efficiency of <strong>Grow a Garden Stocks</strong> necessitates the storage of specific configuration and runtime data. We are committed to a philosophy of <strong>minimal data collection</strong>, focusing exclusively on data essential for its functionality within Discord servers, <strong>without infringing upon personal privacy.</strong> Data is now stored securely in private databases managed by the Bot, and no confidential or personal information is stored. This section provides a transparent overview of what data is collected and how it is managed.</p>
 
         <h3>2.1. Stored Data Schematics:</h3>
         <p>The Bot maintains database records with the following structures and purposes:</p>
@@ -103,68 +103,109 @@
             <li><strong>Server Configuration Data:</strong>
                 <p>This persistent data stores per-Discord server settings. Its integrity is crucial for maintaining your guild's customized <strong>Grow a Garden Stocks</strong> experience.</p>
                 <ul>
-                    <li><strong>Server IDs (Discord Guild IDs):</strong> Unique identifiers assigned by Discord to identify each server where the Bot is active.</li>
-                    <li><strong>Channel IDs:</strong> Specific Discord channel IDs designated for Bot notifications such as announcements, gear updates, event broadcasts, and weather advisories.</li>
-                    <li><strong>Setup Status:</strong> A boolean indicating if the server setup is complete.</li>
-                    <li><strong>Bot Admin Roles:</strong> A collection of roles authorized to use administrative commands, including the User ID of the admin who configured it and the timestamp of addition.</li>
+                    <li><strong>Server IDs (Discord Guild IDs):</strong> Unique identifiers assigned by Discord to identify each server where the Bot is active. This is essential for the bot to differentiate between servers.</li>
+                    <li><strong>Channel IDs:</strong> Specific Discord channel IDs designated for Bot notifications such as announcements, gear updates, event broadcasts, and weather advisories. This allows the bot to post messages in the correct channels.</li>
+                    <li><strong>Setup Status:</strong> A boolean indicating if the server setup is complete. This helps the bot determine if it's ready to operate in a new server.</li>
+                    <li><strong>Bot Admin Roles:</strong> A collection of roles authorized to use administrative commands, including the User ID of the admin who configured it and the timestamp of addition. This is the only user-specific data stored, and it's solely for the purpose of granting command permissions.</li>
                 </ul>
             </li>
             <li><strong>Temporary & Runtime Data:</strong>
+                <p>This data is used for immediate, short-term operations and is not permanently stored.</p>
                 <ul>
-                    <li>Manual Stock Data: Optional, currently empty unless configured.</li>
-                    <li>Manual Weather Data: Optional overrides for events.</li>
-                    <li>Maintenance Flags: Temporary indicators for downtime or maintenance.</li>
-                    <li>Backup Records: Database backups for recovery and data integrity.</li>
+                    <li>Manual Stock Data: Optional, currently empty unless configured. This allows server admins to manually override stock values for specific events.</li>
+                    <li>Manual Weather Data: Optional overrides for events. This functions similarly to the stock data, enabling custom weather conditions for events.</li>
+                    <li>Maintenance Flags: Temporary indicators for downtime or maintenance. These are used to alert the bot to enter a maintenance mode.</li>
+                    <li>Backup Records: Database backups for recovery and data integrity. These are crucial for preventing data loss in the event of a system failure.</li>
                 </ul>
             </li>
         </ul>
 
         <h3>2.2. Core Privacy Tenets:</h3>
         <ul>
-            <li><strong>No Personal User Data (PII):</strong> Only Discord IDs for admins are stored for auditing. User messages, usernames, DMs, or private content are never stored.</li>
-            <li><strong>Server-Level Data Only:</strong> All data relates to server configurations and not individual users.</li>
-            <li><strong>Local & Database Storage:</strong> Data is stored in private databases managed solely by the Bot.</li>
-            <li><strong>No External Sharing:</strong> Stored configuration data is never shared or sold to third parties.</li>
-            <li><strong>Ephemeral Data & Cleanup:</strong> Temporary runtime data is automatically cleared when no longer needed.</li>
+            <li><strong>No Personal User Data (PII):</strong> Only Discord IDs for admins are stored for auditing and permission control. User messages, usernames, direct messages, or private content are never stored.</li>
+            <li><strong>Server-Level Data Only:</strong> All data relates to server configurations and not individual users. This reinforces that the bot is focused on server operations, not user tracking.</li>
+            <li><strong>Local & Database Storage:</strong> Data is stored in private databases managed solely by the Bot, ensuring it remains within a secure environment.</li>
+            <li><strong>No External Sharing:</strong> Stored configuration data is never shared or sold to third parties. We have a strict policy against data monetization.</li>
+            <li><strong>Ephemeral Data & Cleanup:</strong> Temporary runtime data is automatically cleared when no longer needed, minimizing the data footprint.</li>
         </ul>
 
-        ---
+        <hr>
 
         <h2>3. Service Availability & Resilience</h2>
-        <p>The Bot is delivered on an "as-is" and "as-available" basis. No guarantees are made regarding uninterrupted service or error-free operation. External factors such as Discord API outages or network issues may impact performance. Functionality may be modified, suspended, or decommissioned at any time without prior notice.</p>
+        <p>The Bot is delivered on an "as-is" and "as-available" basis. No guarantees are made regarding uninterrupted service or error-free operation. External factors such as Discord API outages, network issues, or infrastructure problems may impact performance. Functionality may be modified, suspended, or decommissioned at any time without prior notice. This clause manages user expectations by clarifying that the bot is a free service provided without a formal service-level agreement.</p>
 
-        ---
+        <hr>
 
         <h2>4. Limitations of Liability & Risk Acceptance</h2>
+        <p>By using the bot, you agree to accept the inherent risks and limitations. The developer is not liable for:</p>
         <ul>
-            <li>Inaccuracies or omissions in game-related stock data.</li>
-            <li>Failure to deliver notifications due to network or API issues.</li>
-            <li>Direct or indirect damages from using or being unable to use the Bot.</li>
-            <li>Actions or inactions of third-party users or administrators.</li>
+            <li>Inaccuracies or omissions in game-related stock data, as this information is for recreational purposes.</li>
+            <li>Failure to deliver notifications due to external network or Discord API issues, which are beyond our control.</li>
+            <li>Direct or indirect damages arising from using or being unable to use the Bot.</li>
+            <li>Actions or inactions of third-party users or administrators within your server.</li>
         </ul>
 
-        ---
+        <hr>
 
-        <h2>5. Termination of Access Protocols</h2>
-        <p>The developer may restrict, suspend, or revoke access to the Bot or its features for users or servers violating these Terms or Discord's TOS and Guidelines, at any time without notice or liability.</p>
+        <h2>5. Termination of Access Protocols and Consequences of Violation</h2>
+        <p>
+            To ensure the continued safety, functionality, and integrity of the **Grow a Garden Stocks** bot for all users, the developer reserves the explicit and non-negotiable right to terminate access under a multi-tiered system of enforcement. This provision grants the developer the necessary authority to enforce the entirety of these Terms of Service, as well as the overarching Terms of Service and Community Guidelines set forth by the Discord platform, based on a rigorous analysis of usage telemetry. If it is determined that a user or an entire server has engaged in a violation, the developer may, at their sole and final discretion, take immediate and decisive action.
+        </p>
+        <p>
+            Violations that will trigger the enforcement protocol include, but are not limited to, the following high-level categories, each with a defined consequence:
+        </p>
+        <ol>
+            <li><strong>Tier 1 Violations (Abuse & Non-Standard Payloads):</strong> This tier encompasses the use of bots, scripts, or automated programs to interact with <strong>Grow a Garden Stocks</strong> in a manner that exceeds reasonable request volumes, circumvents established rate limits, or floods the bot with non-standard API request payloads. It also includes the deliberate generation of excessive traffic designed to degrade service performance.
+                <br><strong>Consequence:</strong> Immediate, temporary IP and Discord ID-based suspension from all bot features for a period of up to 72 hours, with an automated warning message directed to the server administrator.</li>
+            <li><strong>Tier 2 Violations (Malicious Intent & Code Tampering):</strong> This tier includes actions designed to cause harm, such as exploiting known or emergent security vulnerabilities, attempting to exfiltrate data, or using the bot to flood servers with malicious content. This also covers any attempt to decompile, reverse-engineer, or interfere with the bot's core code or data structures, as detailed in Section 1.
+                <br><strong>Consequence:</strong> Immediate, permanent ban of the user and/or server from the bot. All stored server configuration data will be purged from the database, and the user's Discord ID will be added to a permanent blacklist.</li>
+            <li><strong>Tier 3 Violations (Content & Legal Transgressions):</strong> This tier involves the utilization of the bot's output or command-line interface to post, promote, or distribute content that violates Discord's Terms of Service, including illegal content, harassment, or hate speech. This is a zero-tolerance policy.
+                <br><strong>Consequence:</strong> Immediate and irreversible permanent ban of the user and server. The developer may also report the violation to Discord Trust & Safety, and, if applicable, to law enforcement agencies, with all relevant telemetry data.</li>
+        </ol>
+        <p>
+            The decision to apply these protocols is final and non-negotiable. This is a critical security measure designed to allow for the swift and effective removal of malicious actors or abusive servers, ensuring the bot remains a positive, compliant, and healthy tool for its community.
+        </p>
 
-        ---
+        <hr>
 
-        <h2>6. Amendment & Evolution of Terms</h2>
-        <p>These Terms are subject to revision at any time. Continued use of the Bot constitutes acceptance of updated Terms. Users should periodically review the Terms for changes.</p>
+        <h2>6. Amendment & Evolution of Terms: A Protocol for Asynchronous Terms Revision</h2>
+        <p>
+            The digital world is a dynamic and ever-changing environment, and the features, dependencies, and operational parameters of the **Grow a Garden Stocks** bot may be subject to change over time. Consequently, these Terms of Service are not a static legal contract; they must be able to adapt and evolve to reflect updates to the bot's codebase, new feature integrations, or changes in platform-level APIs and policy. This clause stipulates that the terms may be revised or updated at any time by the developer, and the developer is not obligated to provide individual notifications of such changes.
+        </p>
+        <p>
+            The revision process operates on an asynchronous model:
+        </p>
+        <ol>
+            <li><strong>Change Trigger:</strong> Amendments may be initiated by a variety of factors, including, but not limited to, changes in Discord's API schema, emergent security vulnerabilities, updates to third-party dependencies, or changes in hosting provider service-level agreements.</li>
+            <li><strong>Versioning & Change Log:</strong> Each revision will be assigned a new version number. A public-facing change log, accessible via a designated command or website, will detail the modifications. The "Last Updated" timestamp prominently displayed at the top of this document will always reflect the most current version.</li>
+            <li><strong>User's Due Diligence:</strong> When changes are made, the new terms become effective immediately upon being posted. By continuing to use the **Grow a Garden Stocks** bot after any revisions have been published, you are providing your implicit and unconditional agreement to be bound by the updated terms. This constitutes a waiver of any right to receive individual notification of changes.</li>
+        </ol>
+        <p>
+            It is your sole responsibility as a user to periodically review these terms for changes. Your continued use of the bot after any update signifies your full acceptance of the revised terms, making this a dynamic and continually binding agreement between you and the service.
+        </p>
 
-        ---
+        <hr>
 
-        <h2>7. Developer Access and Internal Command Usage</h2>
+        <h2>7. Secure Protocol for Internal Diagnostics and Operational Integrity</h2>
+        <p>
+            For the exclusive and highly-restricted purposes of essential maintenance, debugging, and providing direct support, the developer may, on rare and necessary occasions, need to access a server where the bot is active. This section is provided to offer complete transparency and to establish a clear, secure protocol surrounding this access, which operates under a strict **zero-trust** policy.
+        </p>
+        <p>
+            The developer will only utilize specific, internal, and highly-protected diagnostic commands for this purpose. These are not publicly accessible. Such commands may include, but are not limited to, <code>/join</code> for temporary presence, as well as commands like <code>_debug</code> and <code>_diagnose</code> for retrieving anonymized telemetry data. The use of these commands is strictly controlled, permissioned, and is only exercised for legitimate, technical purposes such as:
+        </p>
         <ul>
-            <li><strong>Restricted Developer Command – <code>!join</code>:</strong> The developer may join servers temporarily to inspect bot behavior or configuration.</li>
-            <li>Visits are non-intrusive and no messages or content are stored.</li>
+            <li><strong>Performance Metrics Analysis:</strong> Examining the bot's CPU and memory footprint within a specific server to diagnose performance bottlenecks.</li>
+            <li><strong>Error Traceback Retrieval:</strong> Accessing a real-time, anonymized stack trace to pinpoint the source of an application crash or bug.</li>
+            <li><strong>Network Latency Metrics:</strong> Testing the connection integrity and latency between the bot's hosting infrastructure and the Discord API from within a specific server's region.</li>
         </ul>
+        <p>
+            It is of utmost importance to note that these visits are conducted in a **non-intrusive** and **ephemeral** manner. The developer does not and will not store any user messages, private content, or personally identifiable information during these sessions. The sole objective is to observe the bot's operational state, identify the root cause of a problem, and take immediate steps to resolve it. All such access is meticulously logged with the timestamp, the explicit purpose of the visit, and the duration, providing an internal, cryptographically-secure audit trail. This protocol ensures that your privacy is respected and protected with the highest priority while still allowing the developer to effectively maintain the bot's quality, stability, and security.
+        </p>
 
-        ---
+        <hr>
 
         <div class="disclaimer">
-            <p><strong>Disclaimer & Final Protocol:</strong> <strong>Grow a Garden Stocks</strong> is free for non-commercial deployment. Ensure full understanding and acceptance of these operational and data protocols before using the Bot.</p>
+            <p><strong>Disclaimer & Final Protocol:</strong> <strong>Grow a Garden Stocks</strong> is free for non-commercial deployment. Ensure full understanding and acceptance of these operational and data protocols before using the Bot. Enjoy your garden!</p>
         </div>
     </div>
 </body>
