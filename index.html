@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Grow a Garden Stocks – Terms of Service</title>
+    <title>Bot Terms of Service - Grow a Garden Stocks</title>
     <style>
         body {
             font-family: 'Consolas', 'Monaco', monospace;
@@ -28,8 +28,14 @@
         }
         h1 {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
             font-size: 2.5em;
+        }
+        .updated {
+            text-align: center;
+            font-size: 0.9em;
+            color: #e6c07b;
+            margin-bottom: 30px;
         }
         ul {
             list-style-type: square;
@@ -38,6 +44,9 @@
         }
         li {
             margin-bottom: 12px;
+        }
+        p {
+            margin-bottom: 1.2em;
         }
         strong {
             color: #e6c07b;
@@ -67,60 +76,89 @@
 </head>
 <body>
     <div class="container">
-        <h1>🌿 Grow a Garden Stocks – Terms of Service</h1>
+        <h1>Bot Terms of Service: Protocol & Data Integrity for Grow a Garden Stocks</h1>
+        <div class="updated">Last Updated: August 13, 2025</div>
 
-        <p>Welcome to <strong>Grow a Garden Stocks</strong> (“the Bot” or “the Service”). By adding, configuring, or interacting with the Bot in your Discord server, you agree to abide by these Terms of Service, which outline permitted use, data handling, and operational boundaries.</p>
+        <p>Welcome, fellow digital voyager, to the operational parameters governing your interaction with <strong>Grow a Garden Stocks</strong> (herein referred to as "the Bot" or "the Service"). By initiating or continuing the utilization of the Bot's functionalities within any Discord guild (server), you formally acknowledge and unconditionally consent to adhere to the entirety of the following stipulations. Failure to concur with any segment of these terms mandates immediate cessation of Bot usage.</p>
 
-        <h2>1. General Usage</h2>
+        ---
+
+        <h2>1. Permitted & Prohibited Operational Modalities</h2>
+        <p>To ensure optimal system performance and a harmonious ecosystem within your "Grow a Garden" ventures, your engagement with the Bot is bound by the following protocols:</p>
         <ul>
-            <li>The Bot is provided as-is, without guarantees of uptime, accuracy, or fitness for a particular purpose.</li>
-            <li>You must comply with Discord’s own <a href="https://discord.com/terms" target="_blank">Terms of Service</a> and <a href="https://discord.com/guidelines" target="_blank">Community Guidelines</a>.</li>
-            <li>Abuse, exploitation, or unauthorized access attempts will result in removal of the Bot from your server.</li>
+            <li><strong>Fair Use Doctrine:</strong> You shall refrain from engaging in any form of abuse, unsolicited message proliferation (spamming), or exploitation of any known or yet-to-be-discovered vulnerabilities within the Service's architecture. This includes, but is not limited to, actions designed to degrade performance, consume excessive resources, or bypass intended rate limits of <strong>Grow a Garden Stocks</strong>.</li>
+            <li><strong>Authorized Deployment:</strong> The Bot's deployment and subsequent operation are strictly limited to Discord guilds where you possess the requisite administrative privileges, explicitly granted by the guild owner or an authorized administrator. Unauthorized deployment or manipulation of <strong>Grow a Garden Stocks</strong> is expressly forbidden.</li>
+            <li><strong>Code Integrity:</strong> Any attempt to decompile, disassemble, reverse-engineer, modify, derive source code from, or otherwise tamper with the Bot's compiled binaries, algorithms, or any underlying components of <strong>Grow a Garden Stocks</strong> is unequivocally prohibited. The intellectual property of the Bot remains with its developer.</li>
+            <li><strong>Non-Commercial Stipulation:</strong> The Bot is engineered and provided solely for non-commercial, recreational, and informational purposes. Any form of commercial resale, monetization, financial exploitation, or direct/indirect profit generation through the services provided by <strong>Grow a Garden Stocks</strong> is strictly forbidden without explicit, prior written authorization from the Bot's developer.</li>
         </ul>
 
-        <h2>2. Data Collection, Storage, and Privacy</h2>
-        <p>To function properly, the Bot stores essential server-level configuration and operational data. We follow strict principles of <strong>minimal data collection</strong> and <strong>no confidential data storage</strong>.</p>
+        ---
 
-        <h3>2.1 Storage Method</h3>
-        <p>Persistent data is stored in secure, private databases accessible only to the developer. These databases do not store confidential or personally identifiable information (PII) and are never shared with third parties.</p>
+        <h2>2. Data Collection, Storage, and Privacy Protocol for Grow a Garden Stocks</h2>
+        <p>The operational efficiency of <strong>Grow a Garden Stocks</strong> necessitates the storage of specific configuration and runtime data. We are committed to a philosophy of <strong>minimal data collection</strong>, focusing exclusively on data essential for its functionality within Discord servers, <strong>without infringing upon personal privacy</strong>.</p>
 
-        <h3>2.2 Data Types Stored</h3>
+        <h3>2.1. Stored Data Schematics:</h3>
+        <p>The Bot maintains data within secure, private databases with the following structures and purposes. These databases contain <strong>only</strong> the information listed here and do <strong>not</strong> store confidential or personal user data:</p>
         <ul>
-            <li><strong>Server IDs:</strong> Unique Discord guild identifiers.</li>
-            <li><strong>Channel IDs:</strong> Locations for specific bot outputs (alerts, updates, events).</li>
-            <li><strong>Setup Status:</strong> Whether initial bot configuration is complete.</li>
-            <li><strong>Admin Roles:</strong>
+            <li><strong>Server Configuration Data:</strong>
+                <p>This persistent data structure stores per-Discord server settings. Its integrity is crucial for maintaining your guild's customized <strong>Grow a Garden Stocks</strong> experience.</p>
                 <ul>
-                    <li>Role ID and Name for bot admin permissions.</li>
-                    <li>User ID of the admin who added the role.</li>
-                    <li>Date Added for audit purposes.</li>
+                    <li><strong><code>Server IDs</code> (Discord Guild IDs)</strong> – Public identifiers essential for routing commands to the correct guild.</li>
+                    <li><strong><code>Channel IDs</code></strong> – Used for directing bot notifications to specific channels.</li>
+                    <li><strong><code>Setup Status</code></strong> – Boolean flag for initial setup completion.</li>
+                    <li><strong><code>Bot Admin Roles</code></strong> – Role IDs, names, and audit details of the admin who added them.</li>
                 </ul>
             </li>
-            <li><strong>Temporary Data:</strong> Maintenance flags, manual stock/weather overrides, and internal backup files.</li>
+            <li><strong>Temporary Operational Data:</strong>
+                <p>Runtime states, maintenance flags, backups, and manual overrides for weather or stock data (if used in the future).</p>
+            </li>
         </ul>
 
-        <h3>2.3 What We Don’t Store</h3>
+        <h3>2.2. Core Privacy Tenets for Grow a Garden Stocks:</h3>
         <ul>
-            <li>No message content beyond immediate processing.</li>
-            <li>No usernames, display names, emails, or IP addresses.</li>
-            <li>No tracking of private/direct messages.</li>
+            <li>No Personally Identifiable Information (PII) is collected beyond admin role audit logs.</li>
+            <li>All stored data is server-level configuration, not individual user activity.</li>
+            <li>No message content is stored.</li>
+            <li>Secure private databases are used instead of local files.</li>
+            <li>All temporary data is automatically cleaned up when no longer needed.</li>
+            <li>No stored data is ever shared or sold to third parties.</li>
         </ul>
 
-        <h2>3. Developer Access</h2>
-        <p>For troubleshooting or maintenance, the developer may temporarily join a server via a private invite to verify operation. Internal diagnostic commands may be used but do not persistently store any extra data.</p>
+        ---
 
-        <h2>4. Liability</h2>
+        <h2>3. Service Availability & Resilience for Grow a Garden Stocks</h2>
+        <p>The Bot is provided on an "as-is" and "as-available" basis. No guarantee is made for uninterrupted service.</p>
+
+        ---
+
+        <h2>4. Limitations of Liability & Risk Acceptance for Grow a Garden Stocks</h2>
+        <p>Use of the Bot is at your own risk. The developer is not liable for any damages, losses, or errors resulting from use or inability to use the Bot.</p>
+
+        ---
+
+        <h2>5. Termination of Access Protocols for Grow a Garden Stocks</h2>
+        <p>Access may be revoked at any time for violations of these terms or Discord’s policies.</p>
+
+        ---
+
+        <h2>6. Amendment & Evolution of Terms</h2>
+        <p>These terms may be updated at any time without prior notice. Continued use constitutes acceptance of changes.</p>
+
+        ---
+
+        <h2>7. Developer Access and Internal Command Usage</h2>
         <ul>
-            <li>The Bot is used at your own risk.</li>
-            <li>The developer is not liable for damages, data loss, or server disruption resulting from use of the Bot.</li>
+            <li>Developer may join servers for inspection using restricted commands.</li>
+            <li>No user messages or activities are logged during such visits.</li>
         </ul>
 
-        <h2>5. Changes to Terms</h2>
-        <p>These Terms may be updated without prior notice. Continued use of the Bot after changes constitutes acceptance of the new Terms.</p>
+        ---
 
         <div class="disclaimer">
-            <p><strong>Last Updated:</strong> August 13, 2025</p>
+            <p><strong>Disclaimer & Final Protocol:</strong> <strong>Grow a Garden Stocks</strong> is provided as a free utility for non-commercial Discord server use.</p>
+            <p><strong>Initiate Grow a Garden Stocks Protocol? [Y]</strong></p>
         </div>
     </div>
 </body>
 </html>
+
